@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    $('.header-slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    });
+    // $('.header-slider').slick({
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     arrows: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    // });
     
     $('.msg-slider').slick({
         dots: false,

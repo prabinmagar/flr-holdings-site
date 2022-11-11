@@ -13,12 +13,12 @@ body {
   min-height: 100vh;
 }
 
-.slick-dots li button, .sc-features .sc-features-cnt .sc-list-itm .itm-icon {
+.slick-dots li button, .sc-features .sc-features-cnt .sc-list-itm .itm-icon, .sc-process .sc-list .sc-list-itm .itm-circle .itm-val {
   display: -moz-flex;
   display: flex;
 }
 
-.width-minimized, .icon-lg, .pg-header .pg-header-content .header-slider .header-slider-itm, .container {
+.width-minimized, .icon-lg, .pg-header .pg-header-content .header-slider .header-slider-itm, .container, .sc-process .sc-list .sc-list-itm .itm-circle, .sc-process .sc-list .sc-list-itm .itm-circle .itm-icon img {
   display: block;
 }
 
@@ -807,6 +807,10 @@ a:active {
   background-attachment: fixed;
 }
 
+.pg-header .pg-top {
+  line-height: 40px;
+}
+
 .pg-header .pg-top .pg-top-r .btn-primary {
   height: 50px;
 }
@@ -893,7 +897,7 @@ a:active {
 }
 
 .pg-navbar img {
-  min-width: 200px !important;
+  min-width: 340px !important;
   width: 200px !important;
 }
 
@@ -1273,5 +1277,56 @@ ul {
   display: block;
   opacity: 1;
   transition: all ease-in-out 300ms;
+}
+
+.sc-process .sc-title::after {
+  background-color: #E33C41;
+}
+
+.sc-process .sc-title::before {
+  background-color: #E33C41;
+}
+
+.sc-process .sc-list .sc-list-itm {
+  text-align: center;
+}
+
+.sc-process .sc-list .sc-list-itm .itm-circle {
+  width: 150px;
+  height: 150px;
+  border: 8px solid #f5f5f5;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 100%;
+  position: relative;
+  z-index: initial;
+}
+
+.sc-process .sc-list .sc-list-itm .itm-circle .itm-icon img {
+  width: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sc-process .sc-list .sc-list-itm .itm-circle .itm-val {
+  position: absolute;
+  top: 8px;
+  right: -4px;
+  z-index: initial;
+  width: 32px;
+  height: 32px;
+  background-color: #E33C41;
+  border-radius: 100%;
+  -moz-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.sc-process .sc-list .sc-list-itm .itm-text {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 /*# sourceMappingURL=main.css.map */

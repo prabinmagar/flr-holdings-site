@@ -230,3 +230,46 @@
         }
     }
 }
+
+.sc-process{
+    .sc-title{
+        &::after{
+            @include bg-color($clr-primary);
+        }
+        &::before{
+            @include bg-color($clr-primary);
+        }
+    }
+    .sc-list{
+        .sc-list-itm{
+            text-align: center;
+            .itm-circle{
+                @include box(150px);
+                @include border($clr-light, 8px);
+                @include push--auto;
+                @include border-r-circle;
+                @include pos-relative;
+                .itm-icon{
+                    img{
+                        width: 45px;
+                        @include push--auto;
+                    }
+                }
+                .itm-val{
+                    @include pos-absolute(8px, -4px, null, null);
+                    @include box(32px);
+                    @include bg-color($clr-primary);
+                    @include border-r-circle;
+                    @include flex-center;
+                    color: $clr-white;
+                    @include font-w('bold');
+                }
+            }
+            .itm-text{
+                @include my(18px);
+                
+            }
+            
+        }
+    }
+}
