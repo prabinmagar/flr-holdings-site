@@ -499,6 +499,12 @@ input[type="button"].btn-block {
   margin-right: 12px;
 }
 
+.btn-secondary-outline {
+  background-color: transparent !important;
+  color: #1d64b4 !important;
+  border-color: #1d64b4 !important;
+}
+
 .icon-sm {
   font-size: 12px;
   font-size: calcRem(12px);
@@ -1233,7 +1239,7 @@ ul {
 
 @media (min-width: 992px) {
   .sc-need .tabs-body .tab-body {
-    padding: 48px;
+    padding: 24px;
   }
 }
 
@@ -1247,14 +1253,20 @@ ul {
   line-height: normal;
   letter-spacing: normal;
   margin-bottom: 18px;
+  opacity: 0.9;
 }
 
-.sc-need .tabs-body .tab-body-cnt p {
+.sc-need .tabs-body .tab-body-cnt p, .sc-need .tabs-body .tab-body-cnt ul {
   color: #232733;
   font-size: 18px;
   opacity: 0.9;
   filter: alpha(opacity=90);
   font-weight: 300;
+}
+
+.sc-need .tabs-body .tab-body-cnt ul {
+  list-style-type: disc;
+  margin-left: 24px;
 }
 
 .sc-need .tabs-body .tab-body-active {

@@ -132,3 +132,9 @@ input[type="button"] {
 .btn-icon{
     @include mx(12px);
 }
+
+.btn-secondary-outline{
+    @include bg-transparent;
+    color: $clr-secondary!important;
+    border-color: $clr-secondary!important;
+}
