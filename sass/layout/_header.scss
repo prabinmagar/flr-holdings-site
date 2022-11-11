@@ -1,0 +1,49 @@
+.pg-header{
+    min-height: 100vh;
+    background: linear-gradient($clr-secondary-v1, opacity($clr-secondary, 0.8)), url($img-path + 'header-banner.jpg');
+    background-attachment: fixed;
+
+    .pg-top{
+        .pg-top-r{
+            .btn-primary{
+                height: 50px;
+            }
+
+            .so-links{
+                margin-right: 12px;
+                .so-link-itm{
+                    @include mx(6px);
+                    &:hover{
+                        @include opacity(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .pg-header-content{
+        flex: 1;
+        .header-slider{
+            min-height: calc(100vh - 160px);
+            display: flex;
+            align-items: center;
+            .header-slider-itm{
+                max-width: 680px;
+                @include push--auto;
+                
+                @include breakpoint-up(lg){
+                    max-width: 800px;
+                }
+
+                @include breakpoint-up(xl){
+                    max-width: 992px;
+                }
+
+                &-title{
+                    line-height: 1.45;
+                }
+            }
+        }
+        
+    }
+}

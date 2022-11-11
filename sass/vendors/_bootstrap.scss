@@ -1,0 +1,18 @@
+.btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.container{
+    @include hard--right;
+    @include hard--left;
+    @include push--auto;
+}
+ul{
+    @include flush;
+    @include hard;
+}
+.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
