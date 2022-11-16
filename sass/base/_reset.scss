@@ -49,3 +49,8 @@ button{
     @include bg-transparent;
     @include border-none;
 }
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
